@@ -21,6 +21,7 @@ from telecom_library.sites import get_site_id_for_incident, get_site_inventory
 SLACK_TOKEN = os.environ.get("SLACK_TOKEN")
 DB_URL = os.environ.get("DB_URL")
 
+print(DB_URL)
 
 def get_site_inventory_for_site_id(site_id: str) -> List[Dict[str, Any]]:
     """
@@ -49,12 +50,12 @@ def get_site_inventory_for_site_id(site_id: str) -> List[Dict[str, Any]]:
     return site_inventory
 
 
-def fetch_assigned_incidents() -> List[str]:
+def fetch_assigned_incidents() -> str:
     """
     Fetch incidents assigned to a user.
 
     Returns:
-    - List[str]: A list of incident IDs assigned to the user.
+    - str: Incident ID assigned to the user.
     """
     # Call the mock ServiceNow function to get incidents
     servicenow_response = get_incidents_from_servicenow()
@@ -65,7 +66,7 @@ def fetch_assigned_incidents() -> List[str]:
         for incident in servicenow_response.get("result", [])
     ]
 
-    return assigned_incidents
+    return assigned_incidents[0]
 
 
 def analyze_incident(incident_id: str) -> str:
