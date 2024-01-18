@@ -53,9 +53,6 @@ def fetch_assigned_incidents() -> List[str]:
     """
     Fetch incidents assigned to a user.
 
-    Parameters:
-    - user_id (str): The ID of the user.
-
     Returns:
     - List[str]: A list of incident IDs assigned to the user.
     """
