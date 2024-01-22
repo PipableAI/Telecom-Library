@@ -11,7 +11,7 @@ VALUES
     ('14881_Lala_Land_River', 'ABC123XYZ789456P', 'DUX3423', '1234567890.prf', 'A1'),
     ('14884_Lala_Land_Valley', 'DEF456LMN123789Q', 'DUX3163', '9876543210.prf', 'A2'),
     ('14885_Lala_Land_Mountain', 'GHI789UVW456123R', 'DUX3365', '3456789012.prf', 'A3'),
-    ('14883_Lala_Land_Hilltop', 'JKL012XYZ789456S', 'DUX3463', '7890123455.prf', 'A4'),
+    ('14883_Lala_Land_Hilltop', 'JKL012XYZ789456S', 'DUX3463', '3112444afb684572.prf', 'A4'),
     ('14887_Lala_Land_Forest', 'MNO345ABC678912T', 'DUX3161', '2345678901.prf', 'A5');
 
 INSERT INTO cm_policy (baseband_type, cm_profile)
@@ -19,7 +19,7 @@ VALUES
     ('DUX3423', '1234567890.prf'),
     ('DUX3163', '9876543210.prf'),
     ('DUX3365', '3456789012.prf'),
-    ('DUX3463', '7890123456.prf'),
+    ('DUX3463', 'db96118c24d39e02.prf'),
     ('DUX3161', '2345678901.prf');
 
 INSERT INTO events (event_timestamp, event_id, event_detail)

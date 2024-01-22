@@ -71,7 +71,7 @@ def fetch_assigned_incidents() -> str:
 
 def analyze_incident(incident_id: str) -> str:
     """
-    Get details or Analyze a baseband change incident for a given incident_id.
+    Run Analysis Suite and retrieve detailed analysis for a specific baseband change incident.
 
     Parameters:
     - site_id (int): The ID of the site to analyze.
